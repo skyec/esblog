@@ -1,0 +1,15 @@
+{{ define "index" }}
+<html><body>
+<h1>Posts></h1>
+<ul>
+{{ range .Posts }}
+<li>{{ .Author }}, {{ .Title }}</li>
+{{ end  }}
+</ul>
+
+<hr>
+<a href="/posts/add">Add New Post</a>
+</body></html>
+<!-- end template -->
+{{ end }}
+

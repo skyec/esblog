@@ -1,0 +1,15 @@
+{{ define "viewAdd" }}
+<html><body>
+                <form action="/posts" method="POST">
+                <h1>Add New Post</h1>
+                <h3>Author</h3>
+                <input type="text" name="author"><br>
+                <h3>Title</h3>
+                <input type="TEXT" name="title"><br>
+                <textarea name="content" cols="80" rows="25">
+                </textarea><br>
+                <button name="save">Save</button> | <a href="/posts">Cancel</a>
+                </form>
+
+</body></html>
+{{ end }}
